@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="welcome">
+            <h2>Welcome Page</h2>
+            <br>
+            <p id="sign-in" ><button class="button">Signin to your account</button></p>
+            <cite>WWW.YOURSITE.COM</cite>
+        </div>
+        <div class="login">
+            <div id="login">
+            <p><h3>Welcome !</h3></p>
+            <!-- <p><h3>Good Morning</h3></p> -->
+            <center><h3><span style="color: rgb(32, 29, 51)">Login</span> To Your Account</h3></center>
+            <form action="practice.php" method="get" class="input-group">
+                <input type="email" required placeholder="Email Address" name="Email">
+                <input type="password" required placeholder="Password" name="Pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="must contain at leastone number and one uppercase and lower case letter, and at least 8 or more characters.">
+                <p></p>
+                <label>
+                <input type="checkbox">
+                <span>Remember </span>
+            </label>
+            
+            <input type="submit" value="Login" name="login">
+            <center id="account">Create Account</center>
+            <br>
+            <center id="new-password">Forgot password?</center>
+            </form>
+         </div>
+            <div id="signup">    
+            <p><h3>Hello !</h3></p>
+            <center><h3><span style="color:rgb(32, 29, 51);">Create</span> An Account</h3></center>
+            <form action="practice.php" method="POST" class="input-group">
+                <input type="text" required placeholder="Username" name="Username">
+                <input type="email" required placeholder="Email Address" name="Email">
+                <input type="password" required placeholder="Password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="must contain at leastone number and one uppercase and lower case letter, and at least 8 or more characters.">
+                <input type="password" required placeholder="Confirm-password" name="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="must contain at leastone number and one uppercase and lower case letter, and at least 8 or more characters.">
+                <p></p>
+                <label>
+                <input type="checkbox">
+                <span>Remember </span>
+                <span style="float: right;" id="alr_acct">Already have an account?</span>
+            </label>
+            <!-- <center>Forgot password?</center> -->
+            <input type="submit" value="Signup" name="submit" id="submit">
+            </form>
+       </div> 
+       <div id="forgot-password"class="input-group">
+        <center><h3><span style="color:rgb(32, 29, 51)">Create</span> New Password</h3></center>
+        <input type="text" id="text" placeholder="Generate Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="must contain at least one number and one uppercase and lower case letter, and at least 8 or more characters.">
+        <button class="button" onclick="run()">GENERATE PASSWORD</button>
+        <button class="button" onclick="copyPassword()">COPY</button>
+        <!-- <button type="submit" class="button" name="Save">SAVE</button></center> -->
+        <br>
+        <br>
+        <center><span>OR</span></center>
+        <form action="practice.php" method="post">
+        <input type="email" placeholder="Email Address" name="Email">
+        <input type="password" placeholder="Password" name="Pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="must contain at least one number and one uppercase and lower case letter, and at least 8 or more characters.">
+        <input type="password" placeholder="Confirm-password" name="confirm-pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="must contain at leastone number and one uppercase and lower case letter, and at least 8 or more characters.">
+        <center><button type="submit" class="button" name="Save">SAVE</button></center>
+    </form>
+    </div>
+    </form>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+  

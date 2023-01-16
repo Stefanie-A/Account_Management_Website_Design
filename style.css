@@ -1,0 +1,394 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+    
+}
+.container{
+    width: 100%;
+    /* background: red; */
+    margin: 5% auto;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+   
+   
+}
+.welcome{
+    width: 1000px;
+    background-image: url(1.jpg);
+    background-position: center;
+    background-size: cover;
+   /* background-color: purple; */
+   height: 500px;
+   color: #fff;
+   text-align: center;
+   padding: 10px 10px 30px 10px;
+   height: 550px;
+   /* z-index: 1; */
+   /* border: 1px solid; */
+   flex: 1px 1px auto;
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8),
+    0px 5px 10px rgba(0, 0, 0, 0.8),
+    0px 5px 10px rgba(0, 0, 0, 0.8),
+    0px 5px 10px rgba(0, 0, 0, 0.8);
+    transition: 0.5s ease;
+    transform: translateX(-50px, 50px);
+}
+.welcome h2{
+    font-weight: 100;
+    font-size: 50px;
+}
+.welcome h2, p{
+    top: 150px;
+    position: relative;
+}
+#sign-in{
+   opacity: 0;
+    color: #fff;
+    font-size: large;
+    transition: .3s ease-in;
+    cursor: pointer;
+    animation-name: animate;
+    animation-duration:4s;
+    animation-delay:2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+/* #sign-in:hover{
+    color: rgb(39, 56, 206);
+} */
+.welcome cite{
+    bottom: 0;
+    top: 400px;
+    position: relative;
+}
+.login{
+    visibility: hidden;
+    opacity: 0;
+    width: 0px;
+    background-color: white;
+    height: 550px;
+    padding: 10px 10px 30px 10px;
+    /* border: 1px solid; */
+    flex: 1px 1px auto;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8),
+    0px 5px 10px rgba(0, 0, 0, 0.8),
+    0px 5px 10px rgba(0, 0, 0, 0.8),
+    0px 5px 10px rgba(0, 0, 0, 0.8);
+    /* transition: 0.5s; */
+    transition: 0.5s ease;
+    transform: translateX(-50px, 50px);
+     /* position: absolute; */
+}
+.login p, h3{
+    margin: 50px 40px 20px 20px;
+    font-size: x-large;
+    /* padding: 10px; */
+}
+center{
+    cursor: pointer;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    font-size: medium;
+}
+#signup{
+    visibility: hidden;
+    opacity: 0;
+      /* transition: 0.5s ease; */
+    /* top: 80px; */
+    /* transform: translateX(-50px, 50px); */
+    overflow:hidden;
+    /* pointer-events: visible; */
+     /* position: absolute; */
+}
+#signup p, h3 {
+    margin: 40px 40px 20px 20px;
+    font-size: x-large;
+}
+#login{
+    /* transition: 0.5s ease-in;
+    opacity: 1;
+    visibility: visible; */
+    overflow: hidden;
+}
+input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+input[type="email"], input[type="password"], input[type="text"]{
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 3px solid rgb(32, 29, 51);
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font-size: 16px; 
+     transition: 0.3s ease-in;
+     word-spacing: 5px;
+}
+input[type="password"]{
+    margin-bottom: 5px;
+}
+.input-group{
+    width: 400px;
+    transition: .5s;
+    padding: 10px 0 5px 0;
+    margin: 5px 40px 5px 30px;
+}
+label{
+    color: black;
+    font-weight: 600;
+}
+input[type="checkbox"]{
+    margin-top: 0;
+    width: auto;
+}
+label ~ a{
+    text-decoration: none;
+    color: black;
+    float: right ;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    font-size: small;
+}
+input[type="submit"]{
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 5px;
+    transition: 0.5s ease;
+    /* transform: scale(1.2); */
+    color: rgb(5, 4, 4);
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgb(32, 29, 51);
+    border: none;
+   
+}
+button{
+    padding: 10px;
+    color: #fff;
+    margin: 5px;
+    border: none;
+    text-transform: capitalize;
+    background-color: rgb(32, 29, 51);
+    cursor: pointer;
+    /* transform: scale(1.2); */
+}
+#forgot-password{
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+    padding-bottom: 10px;
+    /* background-color: aquamarine; */
+   
+}
+#forgot-password, #text{
+    /* padding: 10px; */
+    outline: none;
+    /* margin: 5px; */
+}
+.button{
+    background-color: rgb(32, 29, 51);
+}
+/* rgb(128, 0, 128) */
+#submit{
+    width: 100%;
+    padding: 5px 0;
+    margin-top: 2px;
+    transition: 0.5s ease;
+    /* transform: scale(1.2); */
+    color: rgb(5, 4, 4);
+    font-size: medium;
+    background-color: rgb(32, 29, 51);
+    border: none;
+}
+#submit:hover{
+    background-color: rgba(32, 29, 51, 0.8);
+    color: #fff;
+}
+input[type="submit"]:hover{
+    background-color: rgba(32, 29, 51, 0.8);
+    color: #fff;
+}
+@keyframes animate {
+    0%{
+      opacity: 0;
+      transform: translate(0px 0px);
+      color: #fff;
+    }
+    50%{
+        opacity: 0.5;
+        transform: translate(25px 25px);
+        
+     }
+    100%{
+       opacity: 1;
+       transform: translate(50px 50px);
+       color: rgb(32, 29, 51);
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .container{
+        overflow: hidden;
+        padding: 50px;
+        right: 20px;
+    }
+    .welcome{
+        visibility: hidden;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .login{
+        visibility: visible;
+        opacity: 1;
+        top: 30px;
+        position: relative;
+        width: 450px;
+        padding: 5px;
+        margin: 10px;
+        left: -5px;
+        right: -5px;
+        overflow:visible;
+       
+    }
+    .input-group{
+        width: 400px;
+        transition: .5s;
+        padding: 10px 0 5px 0;
+        margin: 5px 30px 5px 30px;
+        overflow: visible;
+    }
+    #signup p, h3 {
+        margin: 30px 40px 10px 20px;
+        font-size: x-large;
+    }
+    #forgot-password{
+        overflow: visible;
+    }
+}
+@media only screen and (min-width: 360px) and (max-width: 740px){
+    .container{
+        overflow: visible;
+        padding: 50px;
+        right: 20px;
+    }
+    .welcome{
+        visibility: hidden;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .login{
+        visibility: visible;
+        opacity: 1;
+        top: 30px;
+        position: relative;
+        width: 450px;
+        padding: 5px;
+        margin: 10px;
+        left: -5px;
+        right: -5px;
+        overflow:visible;
+       
+    }
+    .input-group{
+        width: 400px;
+        transition: .5s;
+        padding: 10px 0 5px 0;
+        margin: 5px 30px 5px 30px;
+        overflow: visible;
+    }
+    #signup p, h3 {
+        margin: 30px 40px 10px 20px;
+        font-size: x-large;
+    }
+    #forgot-password{
+        overflow: visible;
+    }
+}
+@media only screen and (min-width: 280px) and (max-width: 360px){
+    .container{
+        overflow: visible;
+        padding: 50px;
+    }
+    .welcome{
+        visibility: hidden;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .login{
+        visibility: visible;
+        opacity: 1;
+        top: 30px;
+        position: relative;
+        width: 450px;
+        padding: 5px;
+        margin: 10px;
+        left: 50px;
+        right: -50px;
+        overflow: visible;
+        
+    }
+    #signup{
+        overflow: visible;
+    }
+    #signup p, h3 {
+        margin: 30px 40px 10px 20px;
+        font-size: x-large;
+    }
+    #forgot-password{
+        overflow: visible;
+    }
+}
+/* @media only screen and (min-width: 280px){
+    .container{
+        overflow: visible;
+        padding: 50px;
+    }
+    .welcome{
+        visibility: hidden;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .login{
+        visibility: visible;
+        opacity: 1;
+        top: 30px;
+        position: relative;
+        width: 400px;
+        padding: 5px;
+        margin: 10px;
+        left: 50px;
+        right: -50px;
+        overflow: visible;
+        
+    }
+    #signup{
+        overflow: visible;
+    }
+    #signup p, h3 {
+        margin: 30px 40px 10px 20px;
+        font-size: x-large;
+    }
+    #forgot-password{
+        overflow: visible;
+    }
+} */
